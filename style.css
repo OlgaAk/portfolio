@@ -1,0 +1,286 @@
+:root {
+  --main-bg-color: #78909c;
+  --bg-color-dark: #29434e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 1250px;
+  width: 80vw;
+
+  display: flex;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.267);
+  border-radius: 8px;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.main-container {
+  padding: 50px;
+}
+.main-section {
+}
+
+.main-icon {
+  display: inline-block;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.main-section-title {
+  display: flex;
+  align-items: center;
+}
+.main-section-title-text {
+  color: var(--bg-color-dark);
+  display: inline-block;
+  margin: 0;
+  font-weight: 500;
+}
+
+.main-section-body-text {
+  color: var(--main-bg-color);
+  font-size: 14px;
+  line-height: 150%;
+  
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    max-width: 500px;
+}
+
+.skills > .main-section-body-text {
+    flex: 2;
+    margin: 4px;
+    padding-right: 8px;
+
+}
+
+
+.main-section-progress-bar {
+    flex: 5;
+    justify-self: start;
+    height: 10px;
+    background-color: #78909c;
+    animation: grow 1s 0.2s forwards;
+}
+
+@keyframes grow {
+    0% {
+      transform:scale(0);
+      transform-origin:left;
+    }
+    
+    100% {
+      transform:scale(1);
+      transform-origin:left;
+    }
+  }
+
+  @keyframes fadeIn {
+    1% {
+      visibility: hidden;
+    }
+    99% {
+        visibility: hidden;
+      }
+    100% {
+      visibility: visible;
+    }
+  }
+
+.main-section-progress-bar-inactive{
+    flex: 1;
+    height: 10px;
+    width: 50%;
+    background-color:  #78909c7a;
+    animation: fadeIn .9s forwards, grow 0.7s 0.7s forwards;
+}
+
+.lowskill-inactive{
+    flex: 4
+}
+.lowskill{
+   flex: 2
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.works-item {
+    margin-bottom: 45px;
+    width: 320px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(235, 232, 232);
+}
+
+.works-item:hover {
+    cursor: pointer;
+}
+
+.works-item-title{
+    color: var(--bg-color-dark);
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.works-item-text{
+    color: var(--main-bg-color);
+    font-size: 14px;
+    line-height: 160%;
+}
+
+.works-item:hover{
+  
+}
+
+.app-foto{
+    max-width: 100%;
+    max-height: 170px;
+    margin-bottom: 10px;
+}
+
+
+.spacing {
+  height: 20px;
+}
+.spacing-big{
+    height: 60px;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: var(--main-bg-color);
+  border-radius: 0 8px 8px 0;
+  color: white;
+}
+.sidebar-container {
+  padding: 20px;
+}
+.sidebar_top {
+  text-align: center;
+  padding: 30px;
+  background-color: var(--bg-color-dark);
+  border-radius: 0 8px 0 0;
+  position: relative;
+}
+.hire-btn {
+    position: absolute;
+    border: none;
+    font-size: 16px;
+    color: var(--bg-color-dark);
+    border-radius: 8px;
+background-color: rgb(241, 199, 12);
+padding: 6px 20px;
+left: 31%;
+    bottom: -14px;
+}
+.hire-btn:hover {
+cursor: pointer;
+background-color:white;
+}
+
+.foto {
+  max-width: 80px;
+  border-radius: 100%;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+.sidebar_top h2 {
+  font-size: 24px;
+  color: white;
+  margin: 8px;
+}
+
+.sidebar_top h4 {
+  color: var(--main-bg-color);
+  margin: 14px 0;
+  font-weight: 500;
+}
+
+.sidebar-contacts {
+}
+.sidebar-contacts-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  transition: all 0.1s ease-in-out;
+}
+
+.sidebar-contacts-item:hover {
+
+  margin-left: 2px;
+}
+
+.sidebar-contacts-item-text {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.sidebar-icon {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.sidebar-section-title {
+  margin-bottom: 10px;
+}
+
+.sidebar-section-text,
+.sidebar-section-description {
+  font-size: 14px;
+  margin: 0;
+}
+
+.sidebar-section-description {
+  opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    margin: 10px auto;
+    width: 95%;
+  }
+  .sidebar {
+    order: 1;
+    width: 100%;
+  }
+  .sidebar-container{
+      padding: 25px 50px;
+  }
+
+  .main {
+    order: 2;
+  }
+}
+
+@media (max-width: 1275px) {
+    .works-item {
+        width: 96%;
+        text-align: center;
+    }
+    
