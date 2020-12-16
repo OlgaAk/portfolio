@@ -54,7 +54,7 @@ body {
 
 .main-section-body-text {
   color: var(--main-bg-color);
-  font-size: 14px;
+  font-size: 0.9em;
   line-height: 150%;
   
 }
@@ -146,7 +146,7 @@ margin-top: 10px;
 
 .works-item-text{
     color: var(--main-bg-color);
-    font-size: 14px;
+    font-size: 0.9em;
     line-height: 160%;
 }
 
@@ -187,7 +187,7 @@ margin-top: 10px;
 .hire-btn {
     position: absolute;
     border: none;
-    font-size: 16px;
+    font-size: 1em;
     color: var(--bg-color-dark);
     border-radius: 8px;
 background-color: rgb(241, 199, 12);
@@ -238,7 +238,7 @@ img:hover {
 .sidebar-contacts-item-text {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 0.9em;
 }
 .sidebar-icon {
   height: 20px;
@@ -251,7 +251,7 @@ img:hover {
 
 .sidebar-section-text,
 .sidebar-section-description {
-  font-size: 14px;
+  font-size: 0.9em;
   margin: 0;
 }
 
@@ -260,6 +260,9 @@ img:hover {
 }
 
 @media (max-width: 700px) {
+    html{
+        font-size: 18px;
+    }
   .container {
     flex-direction: column;
     margin: 10px auto;
@@ -275,6 +278,10 @@ img:hover {
 
   .main {
     order: 2;
+  }
+  .hire-btn{
+      left: 50%;
+      transform: translateX(-50px);
   }
 }
 
