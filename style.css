@@ -76,7 +76,7 @@ body {
 
 
 .main-section-progress-bar {
-    flex: 5;
+    flex: 6;
     justify-self: start;
     height: 10px;
     background-color: var(--bg-color-dark);
@@ -119,7 +119,7 @@ body {
     flex: 4
 }
 .lowskill{
-   flex: 2
+   flex: 3
 }
 
 .works {
