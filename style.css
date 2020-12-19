@@ -138,11 +138,6 @@ body {
 
 .works-item:hover {
     cursor: pointer;
-
-    border-radius: 10px;
-    padding: 20px;
-    
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.164);
 }
 
 .works-item-title{
@@ -232,9 +227,7 @@ background-color:white;
       padding: 1px; 
 }
 
-img:hover {
-  opacity: 0.5;
-}
+
 
 .sidebar_top h2 {
   font-size: 24px;
