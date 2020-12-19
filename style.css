@@ -269,14 +269,15 @@ background-color:white;
   margin-bottom: 10px;
 }
 
-.sidebar-section-text,
-.sidebar-section-description {
-  font-size: 0.9em;
+.sidebar-section-text{
   margin: 0;
 }
 
 .sidebar-section-description {
   opacity: 0.5;
+}
+.sidebar-section-language {
+    display: flex;
 }
 
 @media (max-width: 700px) {
