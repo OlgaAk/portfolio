@@ -355,6 +355,11 @@ body {
     max-width: 90px;
 
   }
+
+  .open-website-btn {
+
+    font-size: 0.8em;
+  }
 }
 
 footer {
